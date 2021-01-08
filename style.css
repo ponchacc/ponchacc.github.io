@@ -3,14 +3,13 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../assets/webfonts/Bangla.ttf");
-  src: url("../assets/webfonts/Bangla.ttf") format("truetype"),
-       url("../assets/webfonts/Bangla.woff") format("woff");
+  src: url("assets/webfonts/Bangla.ttf");
+  src: url("assets/webfonts/Bangla.ttf") format("truetype"),
+       url("assets/webfonts/Bangla.woff") format("woff");
 }
 .bangla, 
 .bn {
     font-family: Bangla, Arial, Helvetica, sans-serif;
-    font-size: 18px;
     line-height: 1.1;
 }
 .english, 

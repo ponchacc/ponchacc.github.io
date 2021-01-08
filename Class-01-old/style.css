@@ -1,0 +1,78 @@
+body {
+	background-color: silver;
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+
+header {
+	background-color: black;
+	color: white;
+}
+header a {
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+}
+
+
+.logo {
+	display: inline-block;
+	border-right: 1px solid white;
+	padding: 10px;
+}
+
+.menu {
+	float: right;
+	display: inline-block;
+}
+
+.menu ul>li {
+	list-style: none;
+	display: inline-block;
+}
+
+.menu ul>li>a {
+	padding: 15px;
+}
+
+.sec1 {
+	background-color: grey;
+}
+.sec1 img {
+	width: 40%;
+	padding: 15px;
+}
+
+.tc {
+	display: inline-block;
+	width: 50%;
+	padding: 15px;
+
+	float: right;
+}
+
+.sec2 {
+	box-sizing: border-box;
+	height: 280px;
+	padding: 15px;
+	background-color: lightblue;
+}
+
+.tx {
+	display: inline-block;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.map {
+	width: 50%;
+	float: right;
+}
+
+footer	{
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: grey;
+}
