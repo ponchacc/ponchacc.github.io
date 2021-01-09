@@ -3,13 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("assets/webfonts/Bangla.ttf");
-  src: url("assets/webfonts/Bangla.ttf") format("truetype"),
-       url("assets/webfonts/Bangla.woff") format("woff");
+  src: url("../assets/webfonts/Bangla.ttf");
+  src: url("../assets/webfonts/Bangla.ttf") format("truetype"),
+       url("../assets/webfonts/Bangla.woff") format("woff");
 }
 .bangla, 
 .bn {
     font-family: Bangla, Arial, Helvetica, sans-serif;
+    font-size: 18px;
     line-height: 1.1;
 }
 .english, 
@@ -60,24 +61,3 @@ p:last-child {
 }
 
 /*New CSS Here*/
-.c1 {
-  background-color: #000;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.logo h4 {
-    display: inline-block;
-    color: #fff;
-}
-.logo span {
-    display: inline-block;
-}
-
-
-nav ul li {
-  display: inline-block;
-  padding: 0px 10px;
-  padding-top: 10px;
-
-}
