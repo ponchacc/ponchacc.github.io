@@ -1,0 +1,193 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.english, 
+.en {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p:last-child {
+    margin-bottom: 0
+}
+
+/*New CSS Here*/
+
+.sec1 {
+  position: relative;
+}
+
+.bg1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/kdr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  z-index: -5;
+}
+
+.bg1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(45deg, navy 0%, red 100%);
+  z-index: -4;
+}
+
+.sp {
+  padding: 25px 0px;
+}
+.z1 {
+
+  height: 100vh;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  z-index: 1;
+}
+
+.container a {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 150px;
+  height: auto;
+
+}
+
+.flex {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex h1 {
+  font-size: 75px;
+}
+
+.flex h3 {
+  text-transform: uppercase;
+}
+
+.btn {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: none;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, navy 0%, red 100%);
+}
+
+.flex-2 {
+  display: flex;
+  align-items: stretch;
+}
+
+.item {
+  flex: 1;
+}
+
+
+.flex-a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn-2 {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  cursor: pointer;
+  background: linear-gradient(45deg, navy 0%, red 100%);
+}
+
+.btn-2:hover {
+  border: 1px solid black;
+  color: #000;
+  letter-spacing: 2px;
+  background: none;
+}
+
+.flex-a>p,
+.flex-a>div {
+  margin: 7px 0px;
+  max-width: 90%;
+}
+
+.sec3 {
+  position: relative;
+}
+
+.ab {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 70px;
+}
+
+.bg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -5;
+}

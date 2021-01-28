@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Bangla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../assets/webfonts/Bangla.ttf");
+  src: url("../assets/webfonts/Bangla.ttf") format("truetype"),
+       url("../assets/webfonts/Bangla.woff") format("woff");
+}
+.bangla, 
+.bn {
+    font-family: Bangla, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+}
+.english, 
+.en {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover { text-decoration: none }
+a:focus { outline: 0 solid; text-decoration: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input:focus, button:focus, textarea:focus, a:focus {outline: none}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p:last-child {
+    margin-bottom: 0
+}
+
+/*New CSS Here*/
+/* 
+.sec-1 {
+  padding: 25px 0px;
+  background-color: #000;
+}
+
+.cc {
+  background-color: grey;
+}
+
+.text {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.text h5 {
+  margin-bottom: 0 !important;
+}
+
+.cx {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  display: flex;
+  align-items: center !important;
+}
+
+.cx img {
+  width: 50px;
+  height: auto;
+}
+
+.cc ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: flex-end;
+}
+.cc ul>li {
+  list-style: none;
+  display: inline;
+}
+
+.cc ul>li>a {
+  padding: 10px 15px;
+  color: gold;
+}
+
+.cc ul>li:last-child a  {
+  padding-right: 0px !important;
+} */
+
+.section {
+  width: 100%;
+}
+.sec-padding {
+  padding: 25px 0px;
+}
+
+.sec-bg-1 {
+  position: relative;
+  height: 570px;
+  background-image: url(assets/img/kdr.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.sec-bg-1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: linear-gradient(90deg, black 0%, navy 100%);
+  z-index: -1;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  z-index: 99;
+}
+
+.container img  {
+  width: 150px;
+  height: auto;
+}
+
+.me {
+  color: white;
+  width: 700px;
+  text-align: justify;
+  margin: auto;
+  padding: 50px;
+  font-size: 25px;
+}
+
+
