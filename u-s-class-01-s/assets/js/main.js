@@ -7,8 +7,8 @@
             items: 1,
             loop: true,
             nav: false,
-            dots: false,
-            autoplay: false
+            dots: true,
+            autoplay: true
         });
 
     });

@@ -157,6 +157,7 @@ p:last-child {
 }
 
 .btn-2 {
+  display: inline-block;
   color: white;
   border: none; 
   border-radius: 50px;
@@ -221,4 +222,84 @@ p:last-child {
 .flex-img-item img {
   width: 100%;
   height: auto;
+}
+
+
+/* Slide Css */
+.sec-2-div {
+  width: 48%;
+  height: auto;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.s-item > img {
+  width: 100%;
+  height: auto;
+}
+
+#slide {
+  padding-bottom: 35px;
+}
+
+#slide .owl-carousel {
+    position: relative;
+}
+
+/* #slide .owl-carousel:hover .owl-nav {
+    display: block;
+} */
+
+#slide .owl-carousel:hover .owl-dots {
+    display: block;
+}
+
+/* .owl-nav {
+    display: none;
+    height: 50px;
+    width: 100%;
+    left: 0;bottom: calc(50% - 25px);
+    position: absolute;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    line-height: 0.5;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 85px;
+}
+
+.owl-next {
+    position: absolute;
+    right: 85px;
+}
+ */
+.owl-dots {
+    display: block;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* background: rgba(128, 128, 128, 0.274); */
+}
+
+.owl-dots button.owl-dot {
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: red;
+}
+
+.owl-dots button.active {
+    background: blue;
+    width: 18px;
+    height: 12px;
+    transition: 0.3s;
 }
