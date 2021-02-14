@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .english, 
@@ -44,52 +43,57 @@ p:last-child {
 }
 
 /*New CSS Here*/
+
 .sec1 {
-  height: 100vh;
-  width: 100%;
   position: relative;
+}
+
+.bg1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/kdr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  z-index: -5;
+}
+
+.bg1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(45deg, navy 0%, red 100%);
+  z-index: -4;
 }
 
 .sp {
-  padding: 50px 0px;
+  padding: 25px 0px;
 }
+.z1 {
 
-.bg1 {   /* - (Ponchanon). */
-  background: linear-gradient(45deg, rgba(0,0,128,0.7) 0%, rgba(255,0,0,0.6) 100%), url('assets/img/kdr.jpg'), no-repeat;
-  /* background-blend-mode: multiply; */
-  background-size: cover;
-  background-position: top right;
+  height: 100vh;
 }
-
-.bg2 {
-  background-image: url('assets/img/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .container {
+  position: relative;
   width: 1200px;
   margin: auto;
-  position: relative;
+  z-index: 1;
 }
 
-.h-flex {
-  top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.h-flex a {
+.container a {
+  position: absolute;
+  left: 0;
+  top: 25px;
   width: 150px;
   height: auto;
-}
 
-.h-flex span {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .flex {
@@ -110,31 +114,15 @@ p:last-child {
 }
 
 .btn {
+  border: 1px solid white;
   border-radius: 50px;
   padding: 10px 25px;
   transition: 0.3s;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-
-.btn::before {
-  content: "";
-  border: 1px solid white;
-  border-radius: 50px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: -0.5px;
-  top: -0.5px;
-  z-index: -1;
-}
-
-.btn:hover.btn::before {
-  display: none;
 }
 
 .btn:hover {
+  border: none;
   letter-spacing: 2px;
   background: linear-gradient(45deg, navy 0%, red 100%);
 }
@@ -148,6 +136,7 @@ p:last-child {
   flex: 1;
 }
 
+
 .flex-a {
   height: 100%;
   display: flex;
@@ -158,35 +147,19 @@ p:last-child {
 
 .btn-2 {
   color: white;
-  border: none; 
+  border: none;
   border-radius: 50px;
   padding: 10px 25px;
   transition: 0.3s;
   cursor: pointer;
   background: linear-gradient(45deg, navy 0%, red 100%);
-  position: relative;
-}
-
-.btn-2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -0.5px;
-  left: -0.5px;
-  border: 1px solid red;
-  border-radius: 50px;
-  opacity: 0;
-}
-
-.btn-2:hover.btn-2::after {
-  opacity: 1;
 }
 
 .btn-2:hover {
+  border: 1px solid black;
   color: #000;
   letter-spacing: 2px;
-  background: transparent;
+  background: none;
 }
 
 .flex-a>p,
@@ -206,19 +179,15 @@ p:last-child {
   padding: 50px 70px;
 }
 
-
-.flex-img {
-  padding: 10px 0px;
-  display: flex;
+.bg2 {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  justify-content: space-between;
-}
-
-.flex-img-item {
-  width: calc(50% - 10px);
-}
-
-.flex-img-item img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  background-image: url(assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -5;
 }

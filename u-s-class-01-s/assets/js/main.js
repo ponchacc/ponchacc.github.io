@@ -1,21 +1,19 @@
-/*(function ($) {
-	"use strict";
+(function ($) {
+    "use strict";
 
     jQuery(document).ready(function($){
 
-        $(".slide").owlCarousel({
-        	items: 4,
-        	loop: true,
-        	dots: true,
-        	nav: false,
-        	margin: 30,
-        	autoplay: false
+        $("#slide").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false
         });
-        
+
     });
-    
+/*    
     jQuery(window).load(function(){
         
-    });
-    
-}(jQuery));	*/
+    });*/
+}(jQuery)); 
