@@ -1,0 +1,88 @@
+
+/* Small devices (Potrait / landscape phones, up to 767) */
+@media only screen and (max-width: 767px) {
+    
+    .top-nav > * {
+        font-size: 0.9rem;
+    }
+    
+    .big-n img {
+        height: 150px;
+    }
+    
+    .dd-img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .th-ads-div {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    marquee,
+    .marquee span {
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+
+    .marquee {
+        min-width: 18px;
+    }
+
+    #big-slide-news img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .side-bar-2 .dd-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    /* Start - Special Test Here */
+    .natinal-news .nn-news, 
+    .side-bar-2 .nn-news {
+        display: flex;
+        align-items: center;
+    }
+
+    .natinal-news .nn-news,
+    .side-bar-2 .nn-news img {
+        display: inline-block;
+    }
+
+
+
+
+    /* End - Special Test Here */
+
+}
+
+/* Small devices (landscape phones, 480px and up to 767) */
+@media only screen and (min-width: 480px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.8px) {
+    .dd-img { 
+        width: 100%;
+        height: 150px;
+    }
+
+    .side-bar-2 .dd-img {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {}
